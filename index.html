@@ -41,6 +41,16 @@
               </div>
             </div>
 
+          <div class="row">
+            <div class="col-sm-6">
+              <h2>Test Array, some Max Depth, Root hidden</h2>
+              <pre><code>{{sampleJSONArray}}</code></pre>
+            </div>
+            <div class="col-sm-6">
+              <tree-view :data="sampleJSONArray" :options="{maxDepth: 2, rootObjectKey: 'The Test Array', hideRoot: true}"></tree-view>
+            </div>
+          </div>
+
             <div class="row">
               <div class="col-sm-6">
                 <h2>No Max Depth, Named Root Object</h2>

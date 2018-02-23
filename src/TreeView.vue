@@ -1,6 +1,8 @@
 <template>
   <div class="tree-view-wrapper">
-    <tree-view-item class="tree-view-item-root" :data="parsedData" :max-depth="allOptions.maxDepth" :current-depth="0" :modifiable="allOptions.modifiable" @change-data="onChangeData"></tree-view-item>
+    <tree-view-item class="tree-view-item-root" :data="parsedData" :max-depth="allOptions.maxDepth"
+                    :current-depth="0" :modifiable="allOptions.modifiable" :hide-root="allOptions.hideRoot"
+                    @change-data="onChangeData"></tree-view-item>
   </div>
 </template>
 
@@ -94,10 +96,11 @@
     computed: {
       allOptions: function(){
         return _.extend({}, {
-          rootObjectKey:  "root",
-          maxDepth:       4,
-          modifiable:     false
-        }, (this.options || {}) )
+          rootObjectKey: 'root',
+          hideRoot: false,
+          maxDepth: 4,
+          modifiable: false
+        }, (this.options || {}))
       },
     	parsedData: function(){
       	// Take the JSON data and transform
