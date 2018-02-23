@@ -22,7 +22,6 @@
   "author": "Arvid Kahl <mail@arvidkahl.de>",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^4.17.4",
     "vue": "^2.0.0"
   },
   "devDependencies": {
