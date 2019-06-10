@@ -4,6 +4,7 @@
 var config = require('./webpack.base.config');
 var path = require('path');
 
+config.mode = 'development';
 config.entry = './index.js';
 config.output = {
     path: path.resolve('build') + '/',
