@@ -2,6 +2,8 @@
 
 ## Changelog
 
+- 2.2.0:
+  * update dependencies
 - 2.1.0: 
   * Remove lodash usage for a smaller lib
   * Add options `hideRoot` to not render the root "expand Arrow" 
